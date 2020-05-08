@@ -290,7 +290,7 @@
 						echo "pthreads не установлен. Будет запущен только 1 бот!\n";
 						$bot->poll->Updates($bot);
 					} else {
-						$thread = new Thread($bot->poll->Updates, $bot);
+						$thread = new Thread($bot->poll->Updates, Array($bot));
 						$thread.start();
 					}
 				} else {
