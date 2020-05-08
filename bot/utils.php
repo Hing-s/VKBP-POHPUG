@@ -23,7 +23,7 @@
 				$this->func = $func;
 				$this->args = $args;
 			}
-			public function start() {
+			public function run() {
 				$this->func(...$this->args);
 			}
 		}
